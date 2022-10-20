@@ -1,0 +1,149 @@
+.new-secitioin,
+.offers_sectioin,
+.bestseller_sectioin {
+ margin-bottom: 50px;
+}
+
+.Most-Viewed_sectioin {
+ margin-bottom: 90px;
+}
+
+.new {
+ position: relative;
+}
+
+.item-product {
+
+ .img_div_pro {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #f2f2f2;
+
+  .anc_product {
+   img {
+    max-width: 100%;
+    transition: .5s;
+   }
+
+   &:hover {
+    img {
+     transform: scale(1.1);
+    }
+   }
+  }
+
+  .offer- {
+   position: absolute;
+   top: 5px;
+   inset-inline-start: 5px;
+   font-size: 12px;
+   color: #ffffff;
+   font-weight: 800;
+   width: 75px;
+   height: 24px;
+   border-radius: 12px;
+   background-color: #f12f2f;
+   @include flex_var(flex, center, center);
+  }
+
+  .countdown {
+   color: #5b8c5a;
+   font-size: 16px;
+   font-weight: 700;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   span {
+    padding: 0 5px;
+    font-size: 16px;
+    color: #5b8c5a;
+    font-weight: 700;
+   }
+
+   height: 36px;
+   background-color: #dee8de;
+   @include flex_var(flex, center, center);
+  }
+ }
+
+ .anc_product_ {
+  font-size: 15px;
+  color: #242424;
+  text-align: center;
+  margin-bottom: 10px;
+ }
+
+ .price {
+  @include flex_var(flex, center, center);
+  margin-bottom: 20px;
+
+  p {
+   margin-inline-end: 5px;
+   font-size: 16px;
+   color: #f12f2f;
+   font-weight: 700;
+  }
+
+  span {
+   font-size: 16px;
+   text-decoration: line-through;
+   color: #a7a7a7;
+  }
+ }
+
+ .Quantity {
+  width: 151px;
+  height: 40px;
+  margin-inline-end: 5px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  @include flex_var(flex, center, space-between);
+  padding: 0 20px;
+
+  button {
+   font-size: 22px;
+   color: #8b8b8b;
+   text-align: center;
+
+   :hover {
+    color: #f12f2f;
+   }
+  }
+ }
+
+ .Quantity_cart {
+  @include flex_var(flex, center, center);
+ }
+
+ .btn_cart_ {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #5b8c5a;
+  @include flex_var(flex, center, center);
+
+  &:hover {
+   background-color: #f12f2f;
+  }
+ }
+}
+
+@include xs {
+ .item-product {
+  .Quantity {
+   width: 115px;
+   padding: 0 10px;
+  }
+ }
+
+ .new-secitioin,
+ .offers_sectioin,
+ .bestseller_sectioin {
+  margin-bottom: 70px;
+ }
+}

@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style/bootstrap.min.css" />
+  <link rel="stylesheet" href="style/main.css" />
+  <title>ALHARBI-STORES | Home</title>
+</head>
+
+<body>
+  <div class="load-page">
+    <img src="images/prologo.gif" alt="" class="loader">
+  </div>
+  <!-- <div class="moboverlay"></div> -->
+  <div class="login-popup-parant">
+    <i class="las la-times close_login"></i>
+    <div class="login-popup">
+      <i class="las la-user-circle"></i>
+      <h3 class="m_P_gh"> Login</h3>
+      <form>
+        <div class="form-group">
+          <label>Email/mobile number</label>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <label> password</label>
+          <input type="text">
+        </div>
+      </form>
+      <a href="#" class="forget_pass anc_gh"> forget your password?</a>
+      <button class="btn_login btn_gh">
+        Login</button>
+      <div class="login-now">
+        Don't have an account?
+        <a href="#" class="login-now-anc">Register now</a>
+      </div>
+    </div>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <ul class="ul_gh ul_sidebar">
+      <li><a href="#" class="anc_gh anc_sidebar">home</a></li>
+      <li><a href="#" class="anc_gh anc_sidebar">Offers & Discounts</a></li>
+      <li><a href="#" class="anc_gh anc_sidebar">new</a></li>
+      <li><a href="#" class="anc_gh anc_sidebar">Product Categories</a></li>
+
+      <li class="nested-menu">
+        <a href="#" class="anc_gh anc_sidebar">fresh foods</a>
+        <ul class="ul_nested_menu ul_gh">
+          <li><a href="#" class="anc_gh anc_nested-menu">sub</a></li>
+          <li><a href="#" class="anc_gh anc_nested-menu">sub</a></li>
+          <li><a href="#" class="anc_gh anc_nested-menu">sub</a></li>
+          <li><a href="#" class="anc_gh anc_nested-menu">sub</a></li>
+          <li><a href="#" class="anc_gh anc_nested-menu">sub</a></li>
+
+        </ul>
+      </li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Dairy products</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Freezers</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Beverages</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Hot Beverages</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">breakfast</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Food</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Child's needs</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Health & Beauty</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Home care</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Hardware and other products</a></li>
+      <li class="nested-menu"><a href="#" class="anc_gh anc_sidebar">Pet care</a></li>
+
+
+    </ul>
+
+    <div class="lang-sidebar">
+      <span>language</span>
+      <a href="index.html" class="anc_gh anc_lang-sidebar">العربية</a>
+    </div>
+
+  </div>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~start header~~~~~~~~~~~~~~~~~~~~~ -->
+  <div id="main">
+
+    <div class="moboverlay"></div>
+    <header>
+      <div class="custom-container">
+        <div class="header">
+          <div class="logo">
+            <button class="btn_bars btn_gh" onclick='openNav()'><i class="fa fa-bars"></i></button>
+            <a href="index.html" class="anc_logo">
+              <figure>
+                <img src="images/logo.png" alt="logo" />
+              </figure>
+            </a>
+          </div>
+          <div class="input-serch-div-parant">
+            <div class="input-serch-div">
+              <input type="text" placeholder="search">
+              <button class="btn_gh btn_serach"><i class="fas fa-search"></i></i></button>
+            </div>
+          </div>
+          <div class="nav_top">
+            <ul class="ul_gh ul_nav_top">
+              <li><a href="#" class="anc_gh anc_nav_t"> Offers</a></li>
+              <li><a href="#" class="anc_gh anc_nav_t">New</a></li>
+              <li><a href="#" class="anc_gh anc_nav_t">Bestseller</a></li>
+              <li><a href="#" class="anc_gh anc_nav_t">Trademarks</a></li>
+            </ul>
+          </div>
+          <div class="user-shoping">
+            <button class="btn_gh btn-search-mobile"><i class="la la-search"></i></button>
+            <button class="btn_gh btn_user_"><i class="las la-user"></i></button>
+            <button class="btn_gh btn_heart"><i class="lar la-heart"></i></button>
+            <button class="btn_gh btn-cart">
+              <i class="las la-shopping-cart"></i>
+              <span>5</span>
+            </button>
+            <div class="lang-div">
+              <img src="images/ar.png" alt="">
+              English
+              <ul class="ul_gh ul-drop-lang">
+                <li><a href="index.html" class="anc_gh">العربية</a></li>
+                <li><a href="en.html" class="anc_gh">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <nav class="nav_button">
+        <ul class="ul_gh ul_nav_buttom">
+          <li><a href="#" class="anc_gh anc_nav_b b_red "> Presentations</a></li>
+          <li class="action_menu">
+            <a href="#" class="anc_gh anc_nav_b">Exclusive at alharbi stores </a>
+            <ul class="ul_menu ul_gh">
+              <li><a href="#" class="anc_gh anc_menu">sub</a></li>
+              <li><a href="#" class="anc_gh anc_menu"> sub</a></li>
+              <li><a href="#" class="anc_gh anc_menu">sub</a></li>
+            </ul>
+          </li>
+          <li class="action_menu">
+            <a href="#" class="anc_gh anc_nav_b"> fresh foods </a>
+            <ul class="ul_menu ul_gh">
+              <li><a href="#" class="anc_gh anc_menu">fresh foods</a></li>
+              <li><a href="#" class="anc_gh anc_menu"> sub</a></li>
+              <li><a href="#" class="anc_gh anc_menu">sub</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="anc_gh anc_nav_b">Dairy products</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">Freezers</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b"> Beverages</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">Hot Drinks</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">breakfast</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">Food</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">Children's choices</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">Health & Beauty</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">Home care</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b">pet food</a></li>
+          <li><a href="#" class="anc_gh anc_nav_b"> Other</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~end header~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~start main~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <main>
+      <div class="custom-container">
+        <div class="intro-div">
+          <div class="slider-parant">
+            <div class="slider">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item-slider">
+                      <a href="#" class="anc_gh anc_slider">
+                        <img src="images/slider.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item-slider">
+                      <a href="#" class="anc_gh anc_slider">
+                        <img src="images/slider.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item-slider">
+                      <a href="#" class="anc_gh anc_slider">
+                        <img src="images/slider.png" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next">
+                <i class="fa fa-angle-right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="fa fa-angle-left"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner">
+            <img src="images/off.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~end main~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start category~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="category-section">
+      <div class="custom-container">
+        <div class="category">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/1.png" alt="">
+                    </div>
+                    <span>Exclusive at alharbi stores</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/2.png" alt="">
+                    </div>
+                    <span> fresh foods</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/3.png" alt="">
+                    </div>
+                    <span> Dairy products</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/4.png" alt="">
+                    </div>
+                    <span>Freezers </span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/5.png" alt="">
+                    </div>
+                    <span> Drinks</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/6.png" alt="">
+                    </div>
+                    <span>hot drinks</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/7.png" alt="">
+                    </div>
+                    <span> breakfast</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/8.png" alt="">
+                    </div>
+                    <span>food </span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/9.png" alt="">
+                    </div>
+                    <span>baby needs</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/10.png" alt="">
+                    </div>
+                    <span>health and beauty</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/8.png" alt="">
+                    </div>
+                    <span>food </span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/9.png" alt="">
+                    </div>
+                    <span>baby needs</span>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-cats">
+                  <a href="#" class="anc_gh anc_cats">
+                    <div class="img-cats">
+                      <img src="images/cats/10.png" alt="">
+                    </div>
+                    <span>
+                      health & beauty</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <i class="las la-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="las la-angle-left"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end category~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start new~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="new-secitioin">
+      <div class="custom-container">
+        <div class="title-div">
+          <h3 class="m_P_gh">New Arrival</h3>
+          <a href="#" class="anc_more_ anc_gh ">view more</a>
+        </div>
+        <div class="new">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-next">
+            <i class="las la-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="las la-angle-left"></i>
+          </div> -->
+
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end new~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start banner~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="banner_section">
+      <div class="custom-container">
+        <div class="banner1">
+          <a href="#" class="anc_banner">
+            <img src="images/banners/banner1.png" alt="">
+          </a>
+          <a href="#" class="anc_banner">
+            <img src="images/banners/banner2.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end banner~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start offers~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="offers_sectioin">
+      <div class="custom-container">
+        <div class="title-div">
+          <h3 class="m_P_gh">Special Offers</h3>
+          <a href="#" class="anc_more_ anc_gh ">view more</a>
+        </div>
+        <div class="new">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-next">
+                <i class="las la-angle-right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="las la-angle-left"></i>
+              </div> -->
+
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start offers~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start banner~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="banner_section">
+      <div class="custom-container">
+        <div class="banner2">
+          <a href="#" class="anc_banner">
+            <img src="images/banners/banner3.png" alt="">
+          </a>
+          <a href="#" class="anc_banner">
+            <img src="images/banners/banner4.png" alt="">
+          </a>
+          <a href="#" class="anc_banner">
+            <img src="images/banners/banner5.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end banner~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start bestseller~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="bestseller_sectioin">
+      <div class="custom-container">
+        <div class="title-div">
+          <h3 class="m_P_gh">bestseller</h3>
+          <a href="#" class="anc_more_ anc_gh ">view more</a>
+        </div>
+        <div class="new">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-next">
+                        <i class="las la-angle-right"></i>
+                      </div>
+                      <div class="swiper-button-prev">
+                        <i class="las la-angle-left"></i>
+                      </div> -->
+
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start bestseller~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start banner~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="banner_section">
+      <div class="custom-container">
+        <div class="banner3">
+          <a href="#" class="anc_banner">
+            <img src="images/off1.png" alt="">
+          </a>
+          <a href="#" class="anc_banner">
+            <img src="images/off2.png" alt="">
+          </a>
+          <a href="#" class="anc_banner">
+            <img src="images/off3.png" alt="">
+          </a>
+          <a href="#" class="anc_banner">
+            <img src="images/off4.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end banner~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start Most-Viewed~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="Most-Viewed_sectioin">
+      <div class="custom-container">
+        <div class="title-div">
+          <h3 class="m_P_gh">Most Viewed</h3>
+          <a href="#" class="anc_more_ anc_gh ">view more</a>
+        </div>
+        <div class="new">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item-product">
+                  <div class="img_div_pro">
+                    <a href="#" class="anc_product anc_gh">
+                      <img src="images/product.png" alt="">
+                    </a>
+                    <div class="countdown">
+                      <span class="days">06</span>
+                      :
+                      <span class="hours">54</span>
+                      :
+                      <span class="minutes">16</span>
+                      :
+                      <span class="second">03</span>
+                    </div>
+                    <span class="offer-">خصم 15%</span>
+
+                  </div>
+                  <a href="#" class="anc_product_ anc_gh">Tilda Pure Basmati Rice, 5 kg</a>
+                  <div class="price">
+                    <p class="m_P_gh">66.99 SAR</p>
+                    <span>73 SAR</span>
+                  </div>
+                  <div class="Quantity_cart">
+                    <div class="Quantity">
+                      <button class="btn_qty btn_gh"><i class="las la-plus"></i></button>
+                      <span class="num-qyt">1</span>
+                      <button class="btn_qty btn_gh"><i class="las la-minus"></i></button>
+                    </div>
+                    <button class="btn_gh btn_cart_">
+                      <i class="las la-shopping-cart"></i>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-next">
+                            <i class="las la-angle-right"></i>
+                          </div>
+                          <div class="swiper-button-prev">
+                            <i class="las la-angle-left"></i>
+                          </div> -->
+
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end Most-Viewed~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start brands~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="brands_section">
+      <div class="custom-container">
+        <h3 class="title-brand m_P_gh">Shop by Brand</h3>
+        <div class="brands">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/1.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/2.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/3.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/4.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/4.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/5.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/6.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/7.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/8.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/9.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/4.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/5.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/6.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/7.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/8.png" alt="">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="anc_brand anc_gh">
+                  <img src="images/brands/9.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next">
+            <i class="las la-angle-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="las la-angle-left"></i>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end brands~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~start features~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <div class="features_parant">
+      <div class="container">
+        <div class="features">
+          <div class="feat_div">
+            <i class="lar la-star"></i>
+            <div class="text_div">
+              <h4 class="m_P_gh feat_title">Quality Products</h4>
+              <p class="m_P_gh feat_p">Manufacture 100% Guaranteed</p>
+            </div>
+          </div>
+          <div class="feat_div">
+            <i class="las la-shield-alt"></i>
+            <div class="text_div">
+              <h4 class="m_P_gh feat_title">Means of payment</h4>
+              <p class="m_P_gh feat_p">100% secure payment methods</p>
+            </div>
+          </div>
+          <div class="feat_div">
+            <i class="las la-headset"></i>
+            <div class="text_div">
+              <h4 class="m_P_gh feat_title">Customer Service</h4>
+              <p class="m_P_gh feat_p">
+                Excellent customer service
+                24
+                /7
+              </p>
+            </div>
+          </div>
+          <div class="feat_div">
+            <i class="las la-archive"></i>
+            <div class="text_div">
+              <h4 class="m_P_gh feat_title">Free Shipping</h4>
+              <p class="m_P_gh feat_p">For orders over 299 riyals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~end features~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~start footer~~~~~~~~~~~~~~~~~~~~~~ -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="f_div">
+            <div class="logo-f">
+              <img src="images/logo.png" alt="">
+              <div class="maroof-vat">
+                <a href="#" class="anc_gh maroof"><img src="images/maroof.png" alt=""></a>
+                <a href="#" class="anc_gh"><img src="images/vat.png" alt=""></a>
+
+              </div>
+            </div>
+          </div>
+          <div class="f_div">
+            <h2 class="m_P_gh f_btn" role="button" data-toggle="collapse" data-target="#acf"> informations</h2>
+            <ul id="acf" class="ul_list ul_gh collapse">
+              <li><a href="#" class="anc_gh"> About Us</a></li>
+              <li><a href="#" class="anc_gh"> Shipping & delivery</a></li>
+              <li><a href="#" class="anc_gh">Bank Accounts</a></li>
+              <li><a href="#" class="anc_gh">Privacy</a></li>
+              <li><a href="#" class="anc_gh">Terms of use</a></li>
+            </ul>
+          </div>
+          <div class="f_div">
+            <h2 class="m_P_gh f_btn" role="button" data-toggle="collapse" data-target="#acd"> Customers Service </h2>
+            <ul id="acd" class="ul_list ul_gh collapse">
+              <li><a href="#" class="anc_gh"> contact us</a></li>
+              <li><a href="#" class="anc_gh">Complaints & suggestions</a></li>
+              <li><a href="#" class="anc_gh"> Returns </a></li>
+              <li><a href="#" class="anc_gh">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="f_div">
+            <h2 class="m_P_gh f_btn" role="button" data-toggle="collapse" data-target="#ace"> Additions</h2>
+            <ul id="ace" class="ul_list ul_gh collapse">
+              <li><a href="#" class="anc_gh">brands</a></li>
+              <li><a href="#" class="anc_gh"> Gift Certificates</a></li>
+              <li><a href="#" class="anc_gh"> Commission System</a></li>
+              <li><a href="#" class="anc_gh">Special Offers</a></li>
+            </ul>
+          </div>
+          <div class="newslatter">
+            <h4 class="m_P_gh f_btn">Newsletter</h4>
+            <div>
+              <p class="m_P_gh">Subscribe to the newsletter to receive offers</p>
+              <div class="input_div">
+                <input type="text" placeholder="Enter your email address">
+                <button class="btn_gh btn_newsla">
+                  Subscribe
+                </button>
+              </div>
+              <div class="social_media">
+                <ul class="ul_gh ul_social">
+                  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright_parant">
+          <div class="copyright">
+            <p class="m_P_gh">
+              ©
+              Al Harbi Central Markets 2022
+            </p>
+            <div class="app">
+              <h4 class="m_P_gh">Download the store app</h4>
+              <div class="div_app_parant">
+                <a href="#" class="anc_app anc_gh"><img src="images/and.png" alt=""></a>
+                <a href="#" class="anc_app anc_gh"><img src="images/ios.png" alt=""></a>
+              </div>
+            </div>
+            <img src="images/pay.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~end footer~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <button class="btn_gh back_top"></button>
+  </div>
+
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

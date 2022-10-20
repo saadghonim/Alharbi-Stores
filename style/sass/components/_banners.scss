@@ -1,0 +1,141 @@
+.banner1 {
+  @include grid_var(grid, repeat(2, 1fr), 30px);
+  margin-bottom: 30px;
+}
+
+.banner2 {
+  @include grid_var(grid, repeat(3, 1fr), 30px);
+  margin-bottom: 30px;
+}
+
+.banner3 {
+  @include grid_var(grid, repeat(4, 1fr), 30px);
+  margin-bottom: 30px;
+}
+
+@include xs {
+
+  .banner1,
+  .banner2,
+  .banner3 {
+    @include grid_var(grid, repeat(1, 1fr), 10px);
+    margin-bottom: 10px;
+  }
+}
+
+
+.anc_banner {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  transition: 0.5s;
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &:hover {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: -webkit-gradient(linear,
+          left top,
+          right top,
+          from(transparent),
+          color-stop(rgba(255, 255, 255, 0.4)),
+          to(transparent));
+      background: linear-gradient(90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent);
+      animation: ShineAnim 5s ease;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      -webkit-animation: ShineAnim 5s ease;
+    }
+  }
+}
+
+@-webkit-keyframes ShineAnim {
+  0% {
+    left: -100%;
+  }
+
+  10% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes ShineAnim {
+  0% {
+    left: -100%;
+  }
+
+  10% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+// brands
+.brands {
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.title-brand {
+  font-size: 22px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.anc_brand {
+  width: 114px;
+  height: 114px;
+  border-radius: 57px;
+  background-color: #f2f2f2;
+  @include flex-var(flex, center, center);
+  border: 2px solid transparent;
+
+  &:hover {
+    border-color: #f12f2f;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+@include xs {
+  .anc_brand {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+  }
+}
+
+.brands .swiper-button-next,
+.brands .swiper-rtl .swiper-button-prev {
+  right: -5px;
+}
+
+.brands .swiper-button-prev,
+.brands .swiper-rtl .swiper-button-next {
+  left: -5px;
+}
