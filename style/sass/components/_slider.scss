@@ -96,6 +96,11 @@
   bottom: 10px;
  }
 
+ .category .swiper-horizontal>.swiper-pagination-bullets,
+ .category .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -37px;
+ }
+
  .swiper-button-next i,
  .swiper-button-prev i {
   display: none;

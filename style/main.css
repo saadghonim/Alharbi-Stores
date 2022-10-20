@@ -333,6 +333,10 @@ img {
 .slider .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 10px;
   }
+  .category .swiper-horizontal > .swiper-pagination-bullets,
+.category .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -37px;
+  }
   .swiper-button-next i,
 .swiper-button-prev i {
     display: none;
@@ -1596,6 +1600,7 @@ footer .ul_social a:hover {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    padding: 60px 0 30px;
   }
   .logo-f {
     text-align: center;
