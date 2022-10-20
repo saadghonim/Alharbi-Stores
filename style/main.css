@@ -200,7 +200,7 @@ img {
   box-shadow: 0px 0px 5px 0px #99a7b8;
 }
 .fixed_ .logo img {
-  width: 60px;
+  width: 60px !important;
   height: auto;
 }
 
