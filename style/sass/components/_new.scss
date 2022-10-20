@@ -64,7 +64,7 @@
    }
 
    height: 36px;
-   background-color: #dee8de;
+   background-color: rgba(222, 232, 222, .95);
    @include flex_var(flex, center, center);
   }
  }
