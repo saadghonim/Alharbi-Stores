@@ -331,11 +331,19 @@ header {
   text-align: start;
   position: relative;
   transition: .5s;
+
+  @include en {
+    left: 0;
+  }
 }
 
 #main.open-side-menu {
   // transform: translateX(250px);
   right: 250px;
+
+  @include en {
+    left: 250px;
+  }
 }
 
 

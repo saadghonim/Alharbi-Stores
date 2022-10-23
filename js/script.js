@@ -12,7 +12,9 @@ window.onload = function () {
 const nav_bar = document.querySelector("nav");
 const close_nav = document.querySelector(".btn_close_nave");
 const barsIcon = document.querySelector(".btn_bars");
+const html_ = document.querySelector("html");
 const body_ = document.querySelector("body");
+
 const moboverlay = document.querySelector(".moboverlay");
 $(document).ready(function () {
   // varibles
@@ -83,6 +85,7 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 
   moboverlay.style.display = "block";
+  html_.classList.add("over_");
   body_.classList.add("over_");
   document.getElementById("main").classList.add("open-side-menu");
 }
@@ -90,6 +93,7 @@ function openNav() {
 moboverlay.addEventListener("click", function () {
   document.getElementById("mySidenav").style.width = "0";
   moboverlay.style.display = "none";
+  html_.classList.remove("over_");
   body_.classList.remove("over_");
   document.getElementById("main").classList.remove("open-side-menu");
 });
