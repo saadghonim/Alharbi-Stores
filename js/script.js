@@ -121,6 +121,9 @@ const swiper1 = new Swiper(".slider .mySwiper", {
 const swiper2 = new Swiper(".category .mySwiper", {
   slidesPerView: "1",
   // autoplay: false,
+  a11y: {
+    enabled: false,
+  },
   navigation: {
     nextEl: ".category .swiper-button-next",
     prevEl: ".category .swiper-button-prev",
