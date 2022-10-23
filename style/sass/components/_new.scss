@@ -13,6 +13,7 @@
 }
 
 .item-product {
+ padding: 1px 0;
 
  .img_div_pro {
   position: relative;
@@ -158,6 +159,7 @@
 
   .price {
    flex-direction: column;
+   margin-bottom: 15px;
   }
  }
 

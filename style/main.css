@@ -377,9 +377,6 @@ img {
   justify-content: center;
   flex-direction: column;
 }
-.category .anc_cats img:hover {
-  filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(239deg) brightness(106%) contrast(98%);
-}
 .category .anc_cats:hover span {
   color: #f12f2f;
 }
@@ -451,6 +448,9 @@ img {
   position: relative;
 }
 
+.item-product {
+  padding: 1px 0;
+}
 .item-product .img_div_pro {
   position: relative;
   overflow: hidden;
@@ -583,6 +583,7 @@ html[dir=ltr] .item-product .Quantity {
   }
   .item-product .price {
     flex-direction: column;
+    margin-bottom: 15px;
   }
   .new-secitioin,
 .offers_sectioin,
