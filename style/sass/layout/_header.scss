@@ -636,6 +636,10 @@ header {
 }
 
 @include xs {
+  header {
+    padding: 10px 0;
+  }
+
   .header {
     // flex-wrap: nowrap;
     justify-content: space-between;
@@ -663,5 +667,8 @@ header {
       }
     }
 
+    .anc_lang {
+      display: none;
+    }
   }
 }

@@ -1311,6 +1311,9 @@ html[dir=ltr] .ul_nav_buttom .anc_nav_b {
   }
 }
 @media only screen and (max-width: 767px) {
+  header {
+    padding: 10px 0;
+  }
   .header {
     justify-content: space-between;
   }
@@ -1326,6 +1329,9 @@ html[dir=ltr] .ul_nav_buttom .anc_nav_b {
   .user-shoping button:last-of-type {
     -webkit-margin-end: 0px;
             margin-inline-end: 0px;
+  }
+  .user-shoping .anc_lang {
+    display: none;
   }
 }
 footer .f_btn {
