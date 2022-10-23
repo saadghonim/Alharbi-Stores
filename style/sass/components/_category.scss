@@ -56,14 +56,18 @@
 @include xs {
  .category {
   padding: 0;
- }
 
- .category {
-  .img-cats {
-   width: 105px;
-   height: 105px;
+  .anc_cats {
+
+
+   .img-cats {
+    width: 105px;
+    height: 105px;
+   }
   }
  }
+
+
 }
 
 .category .swiper-button-next,

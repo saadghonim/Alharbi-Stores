@@ -413,7 +413,7 @@ img {
   .category {
     padding: 0;
   }
-  .category .img-cats {
+  .category .anc_cats .img-cats {
     width: 105px;
     height: 105px;
   }
@@ -785,7 +785,7 @@ html[dir=ltr] .item-product .Quantity {
     margin-bottom: 20px;
   }
   .feat_div > i {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   html[dir=ltr] .feat_div .feat_p {
     font-size: 13px;
@@ -1131,7 +1131,6 @@ html[dir=ltr] #main.open-side-menu {
   cursor: pointer;
 }
 .login-popup-parant .login-popup {
-  width: 439px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -1146,20 +1145,21 @@ html[dir=ltr] #main.open-side-menu {
   font-size: 48px;
   color: #000000;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .login-popup-parant .login-popup h3 {
   font-size: 18px;
   color: #000000;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .login-popup-parant .forget_pass {
   font-size: 14px;
   color: #999999;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  line-height: normal;
 }
 .login-popup-parant .forget_pass:hover {
   color: #f12f2f;
@@ -1177,7 +1177,7 @@ html[dir=ltr] #main.open-side-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media only screen and (max-width: 767px) {
   .login-popup-parant .btn_login {
@@ -1194,6 +1194,7 @@ html[dir=ltr] #main.open-side-menu {
   color: #000000;
   font-weight: 700;
   text-align: center;
+  line-height: normal;
 }
 .login-popup-parant .login-now a {
   font-size: 14px;
@@ -1204,7 +1205,7 @@ html[dir=ltr] #main.open-side-menu {
 .login-popup-parant .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   width: 100%;
 }
 .login-popup-parant .form-group label {
@@ -1214,6 +1215,7 @@ html[dir=ltr] #main.open-side-menu {
   margin-bottom: 10px;
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
+  line-height: normal;
 }
 .login-popup-parant .form-group label::after {
   content: "*";

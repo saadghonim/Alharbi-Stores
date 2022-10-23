@@ -399,7 +399,7 @@ header {
   }
 
   .login-popup {
-    width: 439px;
+    // width: 439px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -413,14 +413,14 @@ header {
       font-size: 48px;
       color: #000000;
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     h3 {
       font-size: 18px;
       color: #000000;
       font-weight: 700;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
   }
 
@@ -429,7 +429,8 @@ header {
     color: #999999;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    line-height: normal;
 
     &:hover {
       color: #f12f2f
@@ -447,7 +448,7 @@ header {
     font-weight: 800;
     border: 1px solid transparent;
     @include flex-var(flex, center, center);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     @include xs {
       width: 100%;
@@ -465,6 +466,7 @@ header {
     color: #000000;
     font-weight: 700;
     text-align: center;
+    line-height: normal;
 
     a {
       font-size: 14px;
@@ -477,7 +479,7 @@ header {
   .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 100%;
 
     label {
@@ -486,6 +488,8 @@ header {
       font-weight: 700;
       margin-bottom: 10px;
       margin-inline-start: 20px;
+      line-height: normal;
+
 
       &::after {
         content: "*";
