@@ -26,6 +26,7 @@
    img {
     max-width: 100%;
     transition: .5s;
+    width: 100%;
    }
 
    &:hover {
@@ -72,7 +73,7 @@
  }
 
  .anc_product_ {
-  font-size: 15px;
+  font-size: 14px;
   color: #242424;
   text-align: center;
   margin-bottom: 10px;
@@ -99,9 +100,15 @@
  .Quantity {
   width: 151px;
   height: 40px;
-  margin-inline-end: 5px;
+  margin-left: 5px;
+
+  @include en {
+   margin-right: 5px;
+  }
+
   border-radius: 20px;
   background-color: #f2f2f2;
+  direction: rtl;
   @include flex_var(flex, center, space-between);
   padding: 0 20px;
 
@@ -137,9 +144,20 @@
 
 @include xs {
  .item-product {
+  .btn_cart_ {
+   height: 34px;
+   width: 34px;
+  }
+
   .Quantity {
    width: 115px;
    padding: 0 10px;
+   height: 34px;
+   border-radius: 17px;
+  }
+
+  .price {
+   flex-direction: column;
   }
  }
 

@@ -29,6 +29,12 @@
   }
 }
 
+@mixin lg_ {
+  @media only screen and (max-width: 1500px) {
+    @content;
+  }
+}
+
 @mixin min_xs {
   @media only screen and (min-width: 768px) {
     @content;

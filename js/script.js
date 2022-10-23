@@ -69,11 +69,13 @@ $(document).ready(function () {
 $(".btn_user_").click(function () {
   $(".login-popup-parant").slideToggle("500");
   $(".moboverlay").slideToggle("500");
+  body_.classList.add("over_");
 });
 // close signin
 $(".moboverlay, .close_login").click(function () {
   $(".login-popup-parant").fadeOut("500");
   $(".moboverlay").fadeOut("500");
+  body_.classList.remove("over_");
 });
 // nested menu
 $(".nested-menu .anc_sidebar").click(function (e) {
@@ -85,26 +87,23 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 
   moboverlay.style.display = "block";
-  html_.classList.add("over_");
   body_.classList.add("over_");
+  html_.classList.add("over_");
+  $(".header").removeClass("fixsedt");
   document.getElementById("main").classList.add("open-side-menu");
 }
 
 moboverlay.addEventListener("click", function () {
   document.getElementById("mySidenav").style.width = "0";
   moboverlay.style.display = "none";
-  html_.classList.remove("over_");
   body_.classList.remove("over_");
+  html_.classList.remove("over_");
   document.getElementById("main").classList.remove("open-side-menu");
 });
 // swiper js
 const swiper1 = new Swiper(".slider .mySwiper", {
   slidesPerView: "1",
-  observer: true,
-  autoplay: false,
-  observeParents: true,
-  speed: 4000,
-  loopFillGroupWithBlank: true,
+  autoplay: true,
   slidesPerView: "auto",
   navigation: {
     nextEl: ".slider .swiper-button-next",
@@ -116,13 +115,12 @@ const swiper1 = new Swiper(".slider .mySwiper", {
   },
   autoplay: {
     enabled: true,
-    delay: 1,
   },
 });
 // swiper category
 const swiper2 = new Swiper(".category .mySwiper", {
   slidesPerView: "1",
-  autoplay: false,
+  // autoplay: false,
   navigation: {
     nextEl: ".category .swiper-button-next",
     prevEl: ".category .swiper-button-prev",
@@ -131,9 +129,7 @@ const swiper2 = new Swiper(".category .mySwiper", {
     el: ".category .swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    enabled: true,
-  },
+
   breakpoints: {
     0: {
       slidesPerView: 3,

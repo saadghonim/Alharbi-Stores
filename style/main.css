@@ -377,6 +377,9 @@ img {
   justify-content: center;
   flex-direction: column;
 }
+.category .anc_cats img:hover {
+  filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(239deg) brightness(106%) contrast(98%);
+}
 .category .anc_cats:hover span {
   color: #f12f2f;
 }
@@ -385,6 +388,7 @@ img {
 }
 .category .anc_cats:hover .img-cats img {
   filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(239deg) brightness(106%) contrast(98%);
+  -webkit-filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(239deg) brightness(106%) contrast(98%);
 }
 .category .anc_cats span {
   font-size: 15px;
@@ -459,6 +463,7 @@ img {
 .item-product .img_div_pro .anc_product img {
   max-width: 100%;
   transition: 0.5s;
+  width: 100%;
 }
 .item-product .img_div_pro .anc_product:hover img {
   transform: scale(1.1);
@@ -499,7 +504,7 @@ img {
   font-weight: 700;
 }
 .item-product .anc_product_ {
-  font-size: 15px;
+  font-size: 14px;
   color: #242424;
   text-align: center;
   margin-bottom: 10px;
@@ -525,14 +530,17 @@ img {
 .item-product .Quantity {
   width: 151px;
   height: 40px;
-  -webkit-margin-end: 5px;
-          margin-inline-end: 5px;
+  margin-left: 5px;
   border-radius: 20px;
   background-color: #f2f2f2;
+  direction: rtl;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+}
+html[dir=ltr] .item-product .Quantity {
+  margin-right: 5px;
 }
 .item-product .Quantity button {
   font-size: 22px;
@@ -563,9 +571,18 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .item-product .btn_cart_ {
+    height: 34px;
+    width: 34px;
+  }
   .item-product .Quantity {
     width: 115px;
     padding: 0 10px;
+    height: 34px;
+    border-radius: 17px;
+  }
+  .item-product .price {
+    flex-direction: column;
   }
   .new-secitioin,
 .offers_sectioin,
@@ -768,7 +785,7 @@ img {
     margin-bottom: 20px;
   }
   .feat_div > i {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   html[dir=ltr] .feat_div .feat_p {
     font-size: 13px;
@@ -808,6 +825,9 @@ header {
   justify-content: center;
   z-index: 999999999;
 }
+.load-page img {
+  max-width: 250px;
+}
 @media only screen and (max-width: 767px) {
   .load-page img {
     width: 200px;
@@ -836,7 +856,7 @@ header {
   position: relative;
 }
 .input-serch-div input {
-  width: 426px;
+  width: 600px;
   height: 46px;
   border-radius: 23px;
   padding: 0 30px;
@@ -844,6 +864,11 @@ header {
   background-color: #f7f7f7;
   font-size: 14px;
   color: #a1a1a1;
+}
+@media only screen and (max-width: 1500px) {
+  .input-serch-div input {
+    width: 426px;
+  }
 }
 .input-serch-div input:focus {
   outline: 0;
@@ -899,12 +924,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15px;
+  width: 16px;
   height: 16px;
   border-radius: 8px;
   color: #ffffff;
   font-size: 9px;
-  inset-inline-start: 0;
+  right: -6px;
   top: 2px;
   background-color: #f23030;
 }
@@ -1268,8 +1293,8 @@ html[dir=ltr] #main.open-side-menu {
 .nav_top .anc_nav_t {
   font-size: 15px;
   color: #3c3c3c;
-  -webkit-margin-end: 15px;
-          margin-inline-end: 15px;
+  -webkit-margin-end: 30px;
+          margin-inline-end: 30px;
   font-weight: 700;
 }
 .nav_top .anc_nav_t:hover {
@@ -1324,7 +1349,7 @@ html[dir=ltr] #main.open-side-menu {
     justify-content: space-between;
   }
   .header .logo img {
-    width: 90px;
+    width: 60px;
   }
   .header .btn_heart {
     display: none;
