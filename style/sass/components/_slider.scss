@@ -96,6 +96,16 @@
   bottom: 10px;
  }
 
+ .swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+ }
+
+ .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+ .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3px)
+ }
+
  .category .swiper-horizontal>.swiper-pagination-bullets,
  .category .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: -37px;

@@ -124,9 +124,13 @@
 
 @include xs {
   .anc_brand {
-    width: 90px;
-    height: 90px;
+    width: 105px;
+    height: 105px;
     padding: 10px;
+  }
+
+  .brands {
+    padding: 0;
   }
 }
 

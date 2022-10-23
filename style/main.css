@@ -62,7 +62,7 @@ img {
 }
 
 .over_ {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -96,7 +96,7 @@ img {
   font-size: 14px;
   line-height: 30px;
   text-transform: capitalize;
-  color: #3c3c3c;
+  color: #9e9e9e;
 }
 .title-div .anc_more_:hover {
   color: #f12f2f;
@@ -191,17 +191,20 @@ img {
 .fixed_ {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
+  inset-inline-start: 0;
   background-color: #ffffff;
   z-index: 50;
   transition: 0.5s;
-  padding: 10px;
-  box-shadow: 0px 0px 5px 0px #99a7b8;
+  padding: 15px 10px !important;
+  box-shadow: 0 0 4px rgba(22, 22, 22, 0.1);
 }
 .fixed_ .logo img {
   width: 60px !important;
   height: auto;
+}
+.open-side-menu .fixed_ {
+  inset-inline-start: 250px;
 }
 
 .fixsedt {
@@ -333,6 +336,14 @@ img {
 .slider .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 10px;
   }
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 3px);
+  }
   .category .swiper-horizontal > .swiper-pagination-bullets,
 .category .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -37px;
@@ -441,6 +452,9 @@ img {
   overflow: hidden;
   margin-bottom: 20px;
   border: 1px solid #f2f2f2;
+}
+.item-product .img_div_pro .anc_product {
+  text-align: center;
 }
 .item-product .img_div_pro .anc_product img {
   max-width: 100%;
@@ -670,9 +684,12 @@ img {
 
 @media only screen and (max-width: 767px) {
   .anc_brand {
-    width: 90px;
-    height: 90px;
+    width: 105px;
+    height: 105px;
     padding: 10px;
+  }
+  .brands {
+    padding: 0;
   }
 }
 .brands .swiper-button-next,
@@ -762,13 +779,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0px;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 15px 0px;
+  }
 }
 .header .logo {
   display: flex;
 }
 .header .logo img {
   transition: 0.5s;
+}
+
+header {
+  box-shadow: 0 0 4px rgba(22, 22, 22, 0.1);
 }
 
 .load-page {
@@ -783,57 +808,27 @@ img {
   justify-content: center;
   z-index: 999999999;
 }
+@media only screen and (max-width: 767px) {
+  .load-page img {
+    width: 200px;
+  }
+}
 
 .nav_button {
   margin-bottom: 10px;
+  border-top: 1px solid #f4f4f4;
 }
 
-.lang-div {
+.anc_lang {
   font-size: 14px;
   color: #a6a6a6;
-  position: relative;
   transition: 0.5s;
 }
-.lang-div img {
+.anc_lang img {
   -webkit-margin-end: 3px;
           margin-inline-end: 3px;
 }
-.lang-div:hover {
-  color: #f12f2f;
-}
-.lang-div::after {
-  content: "\f107";
-  font-family: "line awesome free";
-  font-weight: 900;
-  font-size: 8px;
-}
-.lang-div:hover .ul-drop-lang {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-}
-.lang-div .ul-drop-lang {
-  position: absolute;
-  text-align: center;
-  padding: 10px;
-  min-width: 120px;
-  inset-inline-end: 0;
-  background-color: #ffffff;
-  box-shadow: 0 0 4px rgba(22, 22, 22, 0.1);
-  top: 25px;
-  visibility: hidden;
-  opacity: 0;
-  z-index: -1;
-  transition: 0.5s;
-}
-.lang-div .ul-drop-lang a {
-  font-size: 14px;
-  color: #a6a6a6;
-}
-.lang-div .ul-drop-lang a:first-child {
-  margin-bottom: 5px;
-}
-.lang-div .ul-drop-lang a:hover {
+.anc_lang:hover {
   color: #f12f2f;
 }
 
@@ -859,7 +854,6 @@ img {
   transform: translateY(-50%);
   top: 50%;
   inset-inline-end: 5px;
-  border: 1px solid transparent;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -872,9 +866,8 @@ img {
 }
 .input-serch-div .btn_serach:hover {
   outline: 0;
-  background-color: transparent;
-  border-color: #f12f2f;
-  color: #f12f2f;
+  background-color: #5b8c5a;
+  color: #ffffff;
 }
 
 .user-shoping {
@@ -933,11 +926,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow-x: auto;
   background-color: #ffffff;
-  box-shadow: 0 0 4px rgba(22, 22, 22, 0.1);
   padding: 0 10px;
-  overflow-y: hidden;
 }
 .ul_nav_buttom a.b_red {
   background-color: #f12f2f;
@@ -997,6 +987,11 @@ html[dir=ltr] .ul_nav_buttom .anc_nav_b {
   color: #f12f2f;
 }
 
+@media only screen and (max-width: 1450px) {
+  .ul_nav_buttom {
+    display: none;
+  }
+}
 .btn-search-mobile i {
   rotate: -90deg;
 }
@@ -1005,7 +1000,7 @@ html[dir=ltr] .ul_nav_buttom .anc_nav_b {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   inset-inline-start: 0;
   background-color: #5b8b5a;
@@ -1016,6 +1011,7 @@ html[dir=ltr] .ul_nav_buttom .anc_nav_b {
 .ul_sidebar > li {
   min-height: 35px;
   padding: 0 13px;
+  width: 250px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1065,19 +1061,14 @@ html[dir=ltr] .ul_nav_buttom .anc_nav_b {
 }
 
 #main {
-  transition: 0.5s;
+  right: 0;
   text-align: start;
+  position: relative;
+  transition: 0.5s;
 }
 
-#main.active {
-  transform: translateX(250px);
-}
-
-html[dir=ltr] .open-side-menu {
-  transform: translateX(250px) !important;
-}
-html[dir=rtl] .open-side-menu {
-  transform: translateX(-250px) !important;
+#main.open-side-menu {
+  right: 250px;
 }
 
 .login-popup-parant {
@@ -1419,12 +1410,10 @@ footer .newslatter .input_div .btn_newsla {
   height: 32px;
   border-radius: 16px;
   background-color: #f23030;
-  border: 1px solid transparent;
 }
 footer .newslatter .input_div .btn_newsla:hover {
-  color: #f12f2f;
-  background-color: transparent;
-  border-color: #f12f2f;
+  color: #ffffff;
+  background-color: #5b8c5a;
 }
 html[dir=rtl] footer .newslatter .input_div .btn_newsla {
   left: 5px;
@@ -1567,12 +1556,16 @@ footer .ul_social a:hover {
   justify-content: center;
   margin: 0 5px;
 }
+.copyright_parant .copyright .app a img {
+  max-width: 100%;
+}
 .copyright_parant .copyright .app a:hover {
   background-color: #5b8c5a;
 }
 .copyright_parant .copyright p {
   font-size: 12px;
   color: #000000;
+  width: 286px;
 }
 .copyright_parant .copyright .maroof {
   margin-bottom: 20px;
@@ -1589,12 +1582,14 @@ footer .ul_social a:hover {
     order: 1;
     margin-bottom: 15px;
   }
-  .copyright_parant .copyright img {
+  .copyright_parant .copyright > img {
     order: 2;
     margin-bottom: 10px;
   }
   .copyright_parant .copyright p {
     order: 3;
+    text-align: center;
+    width: 100%;
   }
   .footer {
     display: flex;

@@ -96,12 +96,10 @@ footer {
     height: 32px;
     border-radius: 16px;
     background-color: #f23030;
-    border: 1px solid transparent;
 
     &:hover {
-     color: #f12f2f;
-     background-color: transparent;
-     border-color: #f12f2f;
+     color: $color_1;
+     background-color: #5b8c5a;
     }
 
     @include ar {
@@ -283,6 +281,10 @@ footer {
     @include flex-var(flex, center, center);
     margin: 0 5px;
 
+    img {
+     max-width: 100%;
+    }
+
     &:hover {
      background-color: #5b8c5a;
     }
@@ -293,6 +295,7 @@ footer {
   p {
    font-size: 12px;
    color: #000000;
+   width: 286px;
   }
 
   .maroof {
@@ -316,13 +319,15 @@ footer {
     margin-bottom: 15px;
    }
 
-   img {
+   >img {
     order: 2;
     margin-bottom: 10px;
    }
 
    p {
     order: 3;
+    text-align: center;
+    width: 100%;
    }
   }
  }

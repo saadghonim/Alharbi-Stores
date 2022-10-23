@@ -1,7 +1,6 @@
 window.onload = function () {
   $(".loader").fadeOut(1000, function () {
     $(this).parent().hide();
-    $("body").css("overflow", "auto");
     $("html, body").animate(
       {
         scrollTop: 0,
@@ -82,16 +81,17 @@ $(".nested-menu .anc_sidebar").click(function (e) {
 //side menu
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").classList.add("open-side-menu");
+
   moboverlay.style.display = "block";
   body_.classList.add("over_");
+  document.getElementById("main").classList.add("open-side-menu");
 }
 
 moboverlay.addEventListener("click", function () {
   document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").classList.remove("open-side-menu");
   moboverlay.style.display = "none";
   body_.classList.remove("over_");
+  document.getElementById("main").classList.remove("open-side-menu");
 });
 // swiper js
 const swiper1 = new Swiper(".slider .mySwiper", {
