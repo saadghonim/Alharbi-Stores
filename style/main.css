@@ -510,7 +510,7 @@ img {
 }
 .item-product .price {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -520,13 +520,11 @@ img {
   font-size: 16px;
   color: #f12f2f;
   font-weight: 700;
-  height: 23px;
 }
 .item-product .price .before_price {
   font-size: 16px;
   text-decoration: line-through;
   color: #a7a7a7;
-  height: 23px;
 }
 .item-product .Quantity {
   width: 151px;

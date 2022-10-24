@@ -81,7 +81,7 @@
   }
 
   .price {
-    @include flex_var(flex, center, center);
+    @include flex_var(flex, baseline, center);
     margin-bottom: 20px;
 
     .offer_price {
@@ -89,14 +89,12 @@
       font-size: 16px;
       color: #f12f2f;
       font-weight: 700;
-      height: 23px;
     }
 
     .before_price {
       font-size: 16px;
       text-decoration: line-through;
       color: #a7a7a7;
-      height: 23px;
     }
   }
 
