@@ -583,6 +583,7 @@ html[dir=ltr] .item-product .Quantity {
   .item-product .price {
     flex-direction: column;
     margin-bottom: 15px;
+    align-items: center;
   }
   .new-secitioin,
 .offers_sectioin,
