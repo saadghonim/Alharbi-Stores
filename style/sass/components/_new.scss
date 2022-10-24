@@ -84,7 +84,7 @@
     @include flex_var(flex, center, center);
     margin-bottom: 20px;
 
-    p {
+    .offer_price {
       margin-inline-end: 5px;
       font-size: 16px;
       color: #f12f2f;
@@ -92,7 +92,7 @@
       height: 23px;
     }
 
-    span {
+    .before_price {
       font-size: 16px;
       text-decoration: line-through;
       color: #a7a7a7;
