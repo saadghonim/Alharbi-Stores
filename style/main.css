@@ -378,7 +378,7 @@ img {
   flex-direction: column;
 }
 .category .anc_cats span {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   color: #000000;
   text-align: center;
@@ -412,9 +412,6 @@ img {
 @media only screen and (max-width: 767px) {
   .category {
     padding: 0;
-  }
-  html[dir=rtl] .category .anc_cats span {
-    font-size: 14px;
   }
   .category .anc_cats .img-cats {
     width: 105px;
@@ -501,7 +498,7 @@ img {
 }
 .item-product .img_div_pro .countdown span {
   padding: 0 5px;
-  font-size: 16px;
+  font-size: 14px;
   color: #5b8c5a;
   font-weight: 700;
 }
@@ -523,12 +520,14 @@ img {
   font-size: 16px;
   color: #f12f2f;
   font-weight: 700;
+  height: 23px;
 }
 .item-product .price span {
   font-size: 16px;
   text-decoration: line-through;
   color: #a7a7a7;
   line-height: 1.5;
+  height: 23px;
 }
 .item-product .Quantity {
   width: 151px;
@@ -577,9 +576,6 @@ html[dir=ltr] .item-product .Quantity {
   .item-product .btn_cart_ {
     height: 34px;
     width: 34px;
-  }
-  html[dir=rtl] .item-product .img_div_pro .countdown span {
-    font-size: 14px;
   }
   .item-product .Quantity {
     width: 115px;
