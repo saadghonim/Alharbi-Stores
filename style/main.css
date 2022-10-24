@@ -413,6 +413,9 @@ img {
   .category {
     padding: 0;
   }
+  html[dir=rtl] .category .anc_cats span {
+    font-size: 14px;
+  }
   .category .anc_cats .img-cats {
     width: 105px;
     height: 105px;
@@ -520,11 +523,13 @@ img {
   font-size: 16px;
   color: #f12f2f;
   font-weight: 700;
+  line-height: 1.5;
 }
 .item-product .price span {
   font-size: 16px;
   text-decoration: line-through;
   color: #a7a7a7;
+  line-height: 1.5;
 }
 .item-product .Quantity {
   width: 151px;
@@ -573,6 +578,9 @@ html[dir=ltr] .item-product .Quantity {
   .item-product .btn_cart_ {
     height: 34px;
     width: 34px;
+  }
+  html[dir=rtl] .item-product .img_div_pro .countdown span {
+    font-size: 14px;
   }
   .item-product .Quantity {
     width: 115px;
@@ -691,6 +699,7 @@ html[dir=ltr] .item-product .Quantity {
   align-items: center;
   justify-content: center;
   border: 2px solid transparent;
+  margin: auto;
 }
 .anc_brand:hover {
   border-color: #f12f2f;
@@ -950,7 +959,8 @@ header {
 .ul_nav_buttom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  flex-wrap: wrap;
   background-color: #ffffff;
   padding: 0 10px;
 }
@@ -963,6 +973,8 @@ header {
 }
 .ul_nav_buttom .anc_nav_b {
   padding: 15px 10px;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
   font-size: 15px;
   text-transform: capitalize;
   color: #3c3c3c;
@@ -1004,11 +1016,17 @@ html[dir=ltr] .ul_nav_buttom .anc_nav_b {
   z-index: -1;
   transition: 0.5s;
 }
-.ul_nav_buttom .action_menu .ul_menu .anc_menu {
+.ul_nav_buttom .action_menu .ul_menu li {
+  margin-bottom: 6px;
+}
+.ul_nav_buttom .action_menu .ul_menu li:last-child {
+  margin-bottom: 0;
+}
+.ul_nav_buttom .action_menu .ul_menu li .anc_menu {
   font-size: 14px;
   color: #a6a6a6;
 }
-.ul_nav_buttom .action_menu .ul_menu .anc_menu:hover {
+.ul_nav_buttom .action_menu .ul_menu li .anc_menu:hover {
   color: #f12f2f;
 }
 
@@ -1212,7 +1230,7 @@ html[dir=ltr] #main.open-side-menu {
   font-size: 14px;
   color: #000000;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
   line-height: normal;
@@ -1298,6 +1316,7 @@ html[dir=ltr] #main.open-side-menu {
   -webkit-margin-end: 30px;
           margin-inline-end: 30px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .nav_top .anc_nav_t:hover {
   color: #f12f2f;
@@ -1615,7 +1634,9 @@ footer .ul_social a:hover {
   .copyright_parant .copyright {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+  }
+  .copyright_parant .copyright .div_app_parant {
+    margin-bottom: 25px;
   }
   .copyright_parant .copyright .app {
     order: 1;
@@ -1623,7 +1644,7 @@ footer .ul_social a:hover {
   }
   .copyright_parant .copyright > img {
     order: 2;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   .copyright_parant .copyright p {
     order: 3;

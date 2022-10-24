@@ -119,8 +119,8 @@ const swiper1 = new Swiper(".slider .mySwiper", {
 });
 // swiper category
 const swiper2 = new Swiper(".category .mySwiper", {
-  slidesPerView: "1",
   // autoplay: false,
+  spaceBetween: 0,
   a11y: {
     enabled: false,
   },
@@ -145,6 +145,12 @@ const swiper2 = new Swiper(".category .mySwiper", {
     },
     1199: {
       slidesPerView: 10,
+    },
+    1400: {
+      slidesPerView: 10,
+    },
+    1800: {
+      slidesPerView: 12,
     },
   },
 });
@@ -325,6 +331,9 @@ const swiper8 = new Swiper(".brands .mySwiper", {
     },
     1400: {
       slidesPerView: 11,
+    },
+    1800: {
+      slidesPerView: 14,
     },
   },
 });

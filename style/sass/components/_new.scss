@@ -89,12 +89,14 @@
    font-size: 16px;
    color: #f12f2f;
    font-weight: 700;
+   line-height: 1.5;
   }
 
   span {
    font-size: 16px;
    text-decoration: line-through;
    color: #a7a7a7;
+   line-height: 1.5;
   }
  }
 
@@ -148,6 +150,17 @@
   .btn_cart_ {
    height: 34px;
    width: 34px;
+  }
+
+  .img_div_pro {
+   .countdown {
+    @include ar {
+     span {
+      font-size: 14px;
+     }
+    }
+
+   }
   }
 
   .Quantity {

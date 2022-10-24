@@ -58,7 +58,11 @@
   padding: 0;
 
   .anc_cats {
-
+   span {
+    @include ar {
+     font-size: 14px;
+    }
+   }
 
    .img-cats {
     width: 105px;

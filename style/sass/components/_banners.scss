@@ -112,6 +112,7 @@
   background-color: #f2f2f2;
   @include flex-var(flex, center, center);
   border: 2px solid transparent;
+  margin: auto;
 
   &:hover {
     border-color: #f12f2f;
